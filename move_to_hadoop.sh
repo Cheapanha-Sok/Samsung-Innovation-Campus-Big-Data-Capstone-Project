@@ -2,7 +2,7 @@
 
 # Set variables
 LOCAL_DIR="data/phnom_penh"        # Local directory containing .xlsx files
-CONTAINER_ID="4297823e34c1"        # Docker container ID (NameNode)
+CONTAINER_ID="namenode"        # Docker container ID (NameNode)
 CONTAINER_TMP_DIR="/tmp"           # Temporary directory in the container
 HDFS_DIR="/user/hadoop/input"      # HDFS directory to store the files
 
