@@ -1,2 +1,4 @@
 /env
 utils/__pycache__
+spark-warehouse/
+metastore_db/
