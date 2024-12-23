@@ -8,3 +8,4 @@ missingno
 pyspark
 openpyxl
 setuptools
+windrose

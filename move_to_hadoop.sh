@@ -71,3 +71,5 @@ clean_container_tmp
 verify_hdfs "$HDFS_DIR_INPUT"
 
 echo "Process complete."
+
+# docker exec -it namenode bash -c "hadoop fs -rm -r /user/hadoop/inputs/*"

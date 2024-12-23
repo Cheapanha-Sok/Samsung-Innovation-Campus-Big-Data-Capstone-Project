@@ -1,38 +1,33 @@
-from pyspark.sql.types import StructType, StructField, StringType, FloatType , DateType , TimestampType
-
-from pyspark.sql import functions as F
+from pyspark.sql.types import StructType, StructField, StringType, FloatType
 
 class Constants:
     """Class to store reusable constants and configurations."""
 
     WEATHER_DATA_SCHEMA = StructType([
-        StructField("date", DateType(), True),                  
-        StructField("time", StringType(), True),                  
-        StructField("water_content(m3/m3)", FloatType(), True),  
-        StructField("solar_radiation(w/m2)", FloatType(), True),  
-        StructField("rain(mm)", FloatType(), True),               
-        StructField("temperature(celcius)", FloatType(), True),   
-        StructField("rh(%)", FloatType(), True),                  
-        StructField("wind_speed(m/s)", FloatType(), True),        
-        StructField("gust_speed(m/s)", FloatType(), True),        
-        StructField("wind_direction(degree)", FloatType(), True),
-        StructField("dew_point(celcius)", FloatType(), True)     
+        StructField("date", StringType(), True),
+        StructField("time", StringType(), True),
+        StructField("water_content", FloatType(), True),
+        StructField("solar_radiation", FloatType(), True),
+        StructField("rain", FloatType(), True),
+        StructField("temperature", FloatType(), True),
+        StructField("rh", FloatType(), True),
+        StructField("wind_speed", FloatType(), True),
+        StructField("gust_speed", FloatType(), True),
+        StructField("wind_direction", FloatType(), True),
+        StructField("dew_point", FloatType(), True),
     ])
-
-    @staticmethod
-    def find_outliers_IQR(spark_df, column):
-        # Calculate Q1 and Q3
-        q1, q3 = spark_df.approxQuantile(column, [0.25, 0.75], 0.0)
-        IQR = q3 - q1
-
-        # Define outlier bounds
-        lower_bound = q1 - 1.5 * IQR
-        upper_bound = q3 + 1.5 * IQR
-
-        # Filter outliers
-        outliers = spark_df.filter((F.col(column) < lower_bound) | (F.col(column) > upper_bound))
-        return outliers
-
-
-
-
+    
+    RAW_DATA_SCHEMA = StructType([
+        StructField("Line#", StringType(), True),
+        StructField("Date", StringType(), True),
+        StructField("Time", StringType(), True),
+        StructField("Water Content (m3/m3)", FloatType(), True),
+        StructField("Solar Radiation (W/m2)", FloatType(), True),
+        StructField("Rain (mm)", FloatType(), True),
+        StructField("Temperature (Celcius)", FloatType(), True),
+        StructField("RH (%)", FloatType(), True),
+        StructField("Wind Speed (m/s)", FloatType(), True),
+        StructField("Gust Speed (m/s)", FloatType(), True),
+        StructField("Wind Direction (Degree)", FloatType(), True),
+        StructField("Dew Point (Celcius)", FloatType(), True),
+    ])
