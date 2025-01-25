@@ -1,0 +1,66 @@
+2024-12-27 10:19:17 Starting the data processing pipeline...
+2024-12-27 10:19:17 Copying .xlsx files to Docker container...
+2024-12-27 10:19:17 Copying data/phnom_penh/APRIL-2021.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/APRIL-2022.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/AUGUST-2021.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/DECEMBER-2020.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/DECEMBER-2021.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/FEBRUARY-2021.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/FEBRUARY-2022.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/JANUARY-2021.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/JANUARY-2022.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/JULY-2021.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/jUNE-2021.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/MARCH-2021.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/MARCH-2022.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/MAY-2021.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/NOVEMBER-2020.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/NOVEMBER-2021.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/OCTOBER-2020.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/OCTOBER-2021.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/SEPTEMBER-2020.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Copying data/phnom_penh/SEPTEMBER-2021.xlsx to namenode:/tmp
+2024-12-27 10:19:17 Checking if /user/hadoop/inputs exists in HDFS...
+2024-12-27 10:19:18 HDFS directory /user/hadoop/inputs ensured.
+2024-12-27 10:19:18 Checking if /user/hadoop/merged exists in HDFS...
+2024-12-27 10:19:20 HDFS directory /user/hadoop/merged ensured.
+2024-12-27 10:19:20 Checking if /user/hadoop/cleaned exists in HDFS...
+2024-12-27 10:19:21 HDFS directory /user/hadoop/cleaned ensured.
+2024-12-27 10:19:21 Checking if /user/hadoop/partitions exists in HDFS...
+2024-12-27 10:19:22 HDFS directory /user/hadoop/partitions ensured.
+2024-12-27 10:19:22 Moving files from Docker container to HDFS directory /user/hadoop/inputs...
+2024-12-27 10:19:26 Cleaning up files from /tmp in Docker container...
+2024-12-27 10:19:26 Verifying files in HDFS directory /user/hadoop/inputs...
+2024-12-27 10:19:27 Process complete.
+2024-12-27 10:30:27 Starting the data processing pipeline...
+2024-12-27 10:30:27 Copying .xlsx files to Docker container...
+2024-12-27 10:30:27 Copying data/phnom_penh/APRIL-2021.xlsx to namenode:/tmp
+2024-12-27 10:30:27 Copying data/phnom_penh/APRIL-2022.xlsx to namenode:/tmp
+2024-12-27 10:30:27 Copying data/phnom_penh/AUGUST-2021.xlsx to namenode:/tmp
+2024-12-27 10:30:27 Copying data/phnom_penh/DECEMBER-2020.xlsx to namenode:/tmp
+2024-12-27 10:30:28 Copying data/phnom_penh/DECEMBER-2021.xlsx to namenode:/tmp
+2024-12-27 10:30:28 Copying data/phnom_penh/FEBRUARY-2021.xlsx to namenode:/tmp
+2024-12-27 10:30:28 Copying data/phnom_penh/FEBRUARY-2022.xlsx to namenode:/tmp
+2024-12-27 10:30:28 Copying data/phnom_penh/JANUARY-2021.xlsx to namenode:/tmp
+2024-12-27 10:30:28 Copying data/phnom_penh/JANUARY-2022.xlsx to namenode:/tmp
+2024-12-27 10:30:28 Copying data/phnom_penh/JULY-2021.xlsx to namenode:/tmp
+2024-12-27 10:30:28 Copying data/phnom_penh/jUNE-2021.xlsx to namenode:/tmp
+2024-12-27 10:30:28 Copying data/phnom_penh/MARCH-2021.xlsx to namenode:/tmp
+2024-12-27 10:30:28 Copying data/phnom_penh/MARCH-2022.xlsx to namenode:/tmp
+2024-12-27 10:30:28 Copying data/phnom_penh/MAY-2021.xlsx to namenode:/tmp
+2024-12-27 10:30:28 Copying data/phnom_penh/NOVEMBER-2020.xlsx to namenode:/tmp
+2024-12-27 10:30:28 Copying data/phnom_penh/NOVEMBER-2021.xlsx to namenode:/tmp
+2024-12-27 10:30:28 Copying data/phnom_penh/OCTOBER-2020.xlsx to namenode:/tmp
+2024-12-27 10:30:28 Copying data/phnom_penh/OCTOBER-2021.xlsx to namenode:/tmp
+2024-12-27 10:30:28 Copying data/phnom_penh/SEPTEMBER-2020.xlsx to namenode:/tmp
+2024-12-27 10:30:28 Copying data/phnom_penh/SEPTEMBER-2021.xlsx to namenode:/tmp
+2024-12-27 10:30:28 Checking if /user/hadoop/inputs exists in HDFS...
+2024-12-27 10:30:29 HDFS directory /user/hadoop/inputs ensured.
+2024-12-27 10:30:29 Checking if /user/hadoop/merged exists in HDFS...
+2024-12-27 10:30:30 HDFS directory /user/hadoop/merged ensured.
+2024-12-27 10:30:30 Checking if /user/hadoop/cleaned exists in HDFS...
+2024-12-27 10:30:31 HDFS directory /user/hadoop/cleaned ensured.
+2024-12-27 10:30:31 Moving files from Docker container to HDFS directory /user/hadoop/inputs...
+2024-12-27 10:30:33 Cleaning up files from /tmp in Docker container...
+2024-12-27 10:30:33 Verifying files in HDFS directory /user/hadoop/inputs...
+2024-12-27 10:30:34 Process complete.
