@@ -4,17 +4,17 @@ class Constants:
     """Class to store reusable constants and configurations."""
 
     WEATHER_DATA_SCHEMA = StructType([
-        StructField("date", StringType(), True),
-        StructField("time", StringType(), True),
-        StructField("water_content", FloatType(), True),
-        StructField("solar_radiation", FloatType(), True),
-        StructField("rain", FloatType(), True),
-        StructField("temperature", FloatType(), True),
-        StructField("rh", FloatType(), True),
-        StructField("wind_speed", FloatType(), True),
-        StructField("gust_speed", FloatType(), True),
-        StructField("wind_direction", FloatType(), True),
-        StructField("dew_point", FloatType(), True),
+    StructField("date", StringType(), True),
+    StructField("time", StringType(), True),
+    StructField("water_content", FloatType(), True),
+    StructField("solar_radiation", FloatType(), True),
+    StructField("rain", FloatType(), True),
+    StructField("temperature", FloatType(), True),
+    StructField("rh", FloatType(), True),
+    StructField("wind_speed", FloatType(), True),
+    StructField("gust_speed", FloatType(), True),
+    StructField("wind_direction", FloatType(), True),
+    StructField("dew_point", FloatType(), True),
     ])
     
     RAW_DATA_SCHEMA = StructType([
