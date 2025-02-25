@@ -1,3 +1,17 @@
+# Samsung Innovation Campus - Big Data
+## Operating System version:
+````courseignore
+https://github.com/Galaxy092/Samsung-Innovation-Campus-Big-Data-Capstone-Project
+````
+
+# Contributors
+
+> Special thanks for all the people who had helped this project so far:
+
+* [Penh Polydet](http://github.com/Galaxy092)
+* [Sok Cheapanha](https://github.com/Cheapanha-Sok)
+* [Oum Stalin](https://github.com/stalin16)
+
 # Set Up Python Environment
 ### Follow the steps below to set up the Python environment in your local project.
 #### 1. Install Python in Your Local Project
@@ -27,7 +41,7 @@ pip install -r requirements.txt
 #### 1. Make the Script Executable
 First, ensure that the script has the appropriate permissions to execute. Run the following command to make the script executable: 
 ````courseignore
-chmod +x move_to_hadoop.sh
+chmod +x scripts/move_to_hadoop.sh
 ````
 
 #### 2. Run the Script
